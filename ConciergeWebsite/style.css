@@ -1,0 +1,140 @@
+body {
+  /* font-family: 'Playfair Display';font-size: 22px; */
+  font-family: 'Playfair Display';
+}
+/*--Carousel images--*/
+.c-item {
+    height: 790px;
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: brightness(0.8);
+  }
+  /*-- End of carousel image--*/
+  /*--About page image--*/
+  .bg-image { 
+    background-image: url('resized/aboutiimm.jpg'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+/*--End of About page image--*/
+/*--
+ adding style to about-1 
+--*/
+
+.about-1{
+  margin: 10px;
+  padding: 30px;
+}
+.about-1 h1{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.about-1 p{
+  text-align: center;
+  padding: 3px;
+  color: black;
+}
+
+/*--
+adding style to about items 
+--*/
+
+.about-item{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 80px 30px;
+  box-shadow: 0 0 9px rgba(0,0,0.6);
+}
+
+/*--
+adding style to the icons(book,globe,pencil)
+--*/
+.about-item i{
+  font-size: 20px;
+  margin: 0;
+}
+
+/*--
+adding style to h3(heading 3) of each item 
+--*/
+.about-item h3{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/*--
+styling the hr (the blue line in between)
+--*/
+.about-item hr{
+  width: 46px;
+  height: 3px;
+  background-color: white;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+
+/*--
+hover means when you put your cursor over it
+--*/
+.about-item:hover{
+  background-color: white;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+  color: grey;
+}
+.about-item:hover hr{
+  background-color: grey;
+}
+
+/*--
+translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by  
+--*/
+.about-item:hover i{
+  transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+  transition: all 400ms ease-in-out;
+}
+/*--Services--*/
+
+#Card_Text{
+  position:absolute;
+  bottom: -210px;
+  transition: 0.2s;
+}
+
+#card_Hover{
+  cursor: pointer;
+}
+
+#card_Hover:hover #Card_Text{
+  bottom: 0px;
+}
+
+img{
+  transition: 0.2s;
+}
+
+#card_Hover:hover img{
+  transform: scale(1.1);
+}
+
+/*--End of Services--*/
